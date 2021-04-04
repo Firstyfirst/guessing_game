@@ -34,7 +34,7 @@ def index():
     games = db.game.find_one({"id":1})
     body = '<div style="text-align:center;">'
     
-    body += '<h1>Game not ready</h1>'
+    body += '<h1>Game is started</h1>'
     # Initialize the document in database
     step = games['step']
     questions = games['question']
